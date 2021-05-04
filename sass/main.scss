@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-size: 0.8em;
+    width: 375px;
+    margin: auto;
+}
+/* Header */
+header{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 15px 0;
+    a{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        font-size: 1.5em;
+    }
+}
+
+#logo--header{
+    width: 44%;
+    height: 30px;
+}
+
+/* footer */
+footer{
+    background-color: #353535;
+    padding: 25px 0 35px 25px;
+    h1{
+        color: white;
+        font-family: 'Shrikhand', cursive;
+    }
+}
+
+#list--footer{
+    list-style-type: none;
+    padding: 0;
+    li{
+        margin-top: 15px;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: 1.5em;
+        i{
+            width: 21px;
+            height: 21px;
+            margin-right: 10px;
+        }
+    }
+}
+
