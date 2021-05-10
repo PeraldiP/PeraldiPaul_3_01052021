@@ -8,6 +8,7 @@
         <script src="https://kit.fontawesome.com/e051dd5741.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.gstatic.com"> 
         <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <div id="container">
@@ -15,78 +16,135 @@
                 <a href="accueil.html"><i class="fas fa-arrow-left"></i></a>
                 <img id="logo--header" alt="logo-header" src="images/logo/ohmyfood.png"/>
             </header>
-            <main>
-                <div><img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"></div>
-                <article>
-                    <div class="title">
+            <main class="main-resto">
+                <div class="banniere"><img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"></div>
+                <section class="menu">
+                    <div class="menu__title">
                         <h1>Le délice des sens</h1>
                         <i class="far fa-heart"></i>
                     </div>
-                    <div class="menu">
+                    <div class="menu__service">
                         <h2>Entrée</h2>
-                        <div class="menu__selection">
-                            <h3>Tartare de thon</h3>
-                            <p>Assaisonné au yuzu</p>
-                            <p class="price">25€</p>
-                            <i class="fas fa-check-circle"></i>
+                        <div class="border"></div>
+                        <div class="choice">
+                            <div class="choice__description">
+                                <h3>Tartare de thon</h3>
+                                <p>Tartare de thon</p>
+                            </div>
+                            <div class="choice__price">
+                                <p class="price">25€</p>
+                            </div>
+                            <div class="choice__validate">
+                                <i class="fas fa-check-circle"></i>        
+                            </div>
                         </div>
-                        <div class="menu__selection">
-                            <h3>Bouchée de homard croustillant </h3>
-                            <p>Et sa farandole de petits légumes</p>
-                            <p class="price">35€</p>
-                            <i class="fas fa-check-circle"></i>
+                        <div class="choice">
+                            <div class="choice__description">
+                                <h3>Bouchée de homard croustillant</h3>
+                                <p>Et sa farandole de petits légumes</p>
+                            </div>
+                            <div class="choice__price">
+                                <p class="price">35€</p>
+                            </div>
+                            <div class="choice__validate">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
                         </div>
-                        <div class="menu__selection">
-                            <h3>Velouté de cèpes </h3>
-                            <p>Aux truffes</p>
-                            <p class="price">20€</p>
-                            <i class="fas fa-check-circle"></i>
+                        <div class="choice">
+                            <div class="choice__description">
+                                <h3>Velouté de cèpes</h3>
+                                <p>Aux truffes</p>
+                            </div>
+                            <div class="choice__price">
+                                <p class="price">20€</p>
+                            </div>
+                            <div class="choice__validate">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
                         </div>
                     </div>
-                    <div class="menu">
+                    <div class="menu__service">
                         <h2>Plats</h2>
-                        <div class="menu__selection">
-                            <h3>Poulet rôti aux herbes de Provence </h3>
-                            <p>Et sa crème de truffe</p>
-                            <p class="price">40€</p>
-                            <i class="fas fa-check-circle"></i>
+                        <div class="border"></div>
+                        <div class="choice">
+                            <div class="choice__description">
+                                <h3>Poulet rôti aux herbes de Provence </h3>
+                                <p>Et sa crème de truffe</p>
+                            </div>
+                            <div class="choice__price">
+                                <p class="price">40€</p>
+                            </div>
+                            <div class="choice__validate">
+                                <i class="fas fa-check-circle"></i>       
+                            </div>    
                         </div>
-                        <div class="menu__selection">
-                            <h3>Langouste rôtie </h3>
-                            <p>Et ses légumes de saison</p>
-                            <p class="price">35€</p>
-                            <i class="fas fa-check-circle"></i>
+                        <div class="choice">
+                            <div class="choice__description">
+                                <h3>Langouste rôtie </h3>
+                                <p>Et ses légumes de saison</p>
+                            </div>
+                            <div class="choice__price">
+                                <p class="price">35€</p>
+                            </div>
+                            <div class="choice__validate">
+                                <i class="fas fa-check-circle"></i>                            
+                            </div>    
                         </div>
-                        <div class="menu__selection">
-                            <h3>Côte de boeuf Angus</h3>
-                            <p>Et sa purée de panais</p>
-                            <p class="price">44€</p>
-                            <i class="fas fa-check-circle"></i>
+                        <div class="choice">
+                            <div class="choice__description">
+                                <h3>Côte de boeuf Angus</h3>
+                                <p>Et sa purée de panais</p>
+                            </div>
+                            <div class="choice__price">
+                                <p class="price">44€</p>
+                            </div>
+                            <div class="choice__validate">
+                                <i class="fas fa-check-circle"></i>                                
+                            </div>            
                         </div>
                     </div>
-                    <div class="menu">
+                    <div class="menu__service">
                         <h2>Dessert</h2>
-                        <div class="menu__selection">
-                            <h3>Farandole de desserts</h3>
-                            <p>Du chef</p>
-                            <p class="price">18€</p>
-                            <i class="fas fa-check-circle"></i>
+                        <div class="border"></div>
+                        <div class="choice">
+                            <div class="choice__description">
+                                <h3>Farandole de desserts</h3>
+                                <p>Du chef</p>
+                            </div>
+                            <div class="choice__price">
+                                <p class="price">18€</p>
+                            </div>
+                            <div class="choice__validate">
+                                <i class="fas fa-check-circle"></i>                                
+                            </div>   
                         </div>
-                        <div class="menu__selection">
-                            <h3>Crème brulée </h3>
-                            <p>Revisitée</p>
-                            <p class="price">22€</p>
-                            <i class="fas fa-check-circle"></i>
+                        <div class="choice">
+                            <div class="choice__description">
+                                <h3>Crème brulée </h3>
+                                <p>Revisitée</p>
+                            </div>
+                            <div class="choice__price">
+                                <p class="price">22€</p>
+                            </div>
+                            <div class="choice__validate">
+                                <i class="fas fa-check-circle"></i>       
+                            </div>    
                         </div>
-                        <div class="menu__selection">
-                            <h3>Tiramisu </h3>
-                            <p>À la noisette</p>
-                            <p class="price">23€</p>
-                            <i class="fas fa-check-circle"></i>
+                        <div class="choice">
+                            <div class="choice__description">
+                                <h3>Tiramisu</h3>
+                                <p>À la noisette</p>
+                            </div>
+                            <div class="choice__price">
+                                <p class="price">23€</p>
+                            </div>
+                            <div class="choice__validate">
+                                <i class="fas fa-check-circle"></i>                            
+                            </div>                            
                         </div>
                     </div>
-                    <button>Commander</button>
-                </div>
+                    <a class="menu__btn" href="#">Commander</a>
+                </section>
             </main>
             <footer>
                 <h1>ohmyfood</h1>
