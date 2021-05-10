@@ -1,0 +1,105 @@
+
+.banniere{
+    img{ 
+        width: 100%;
+        height: 250px;
+        object-fit:cover;
+        }
+}
+
+.menu{
+    background-color:$color-background;
+    border-radius: 30px 30px 0 0;
+    padding-top: 30px;
+    top: 220Px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__title{
+        width: 93%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h2{
+            font-family: 'Shrikhand', cursive;
+            font-size: 2em;
+        }        
+        i{
+            width: 25px;
+            height: 25px;
+            font-size: 1.5em;
+        }
+    }
+    &__service{
+        width: 93%;
+        margin-top: 35Px;
+        h2{
+            font-size: 1.4em;
+            text-transform: uppercase;
+        }
+        .border{
+            margin-top: 8px;
+            width: 40px;
+            border: 1px solid $color-tertiary;
+        }
+    }
+    &__btn{
+        background: linear-gradient($color-secondary 
+            ,$color-primary);
+        text-decoration: none;
+        color: $color-white;
+        height: 50px;
+        width: 185px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+        font-size: 1.5em;
+        margin-top: 50px;
+        margin-bottom: 80px;
+
+    }
+}
+
+.choice{
+    background-color: $color-white;
+    height: 70px;
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__description{
+        margin-left: 10px;
+        width: 270px;
+        h3{
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+        p{
+            font-size: 1.3em;
+        }
+    }
+    &__price{
+        height: 57%;
+        font-size: 1.3em;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+    }
+    &__validate{
+        height: 100%;
+        width:60px;
+        background-color: #99E2D0;
+        border-radius: 0 20px 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+        color: $color-white;
+    }
+}
