@@ -46,6 +46,9 @@
 
 #section--working{
     padding-top: 50px;
+    @include desktop{
+        padding-top: 30px;
+    }
     >h2{
         margin: 0px 0 10px 20px;
         font-size: 2em;
@@ -55,6 +58,11 @@
 .working{
     @include flexbox-center(column);
     margin-bottom: 70px;
+    @include desktop{
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 40px;
+    }
     &__instructions{
         width: 86%;
         height: 75px;
@@ -63,6 +71,9 @@
         margin-top: 20px;
         @include flexbox-center;
         position: relative;
+        @include desktop{
+            width: 28%;
+        }
         h2{
             width: 25px;
             height: 25px;
@@ -87,6 +98,9 @@
 #restaurant{
     background-color: $color-background;
     padding: 60px 0;
+    @include desktop{
+        padding: 30px 0;
+    }
     >h1{
         margin-left: 20px;
     }
@@ -94,6 +108,11 @@
 
 .selection{
     @include flexbox-center(column);
+    @include desktop{
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
     &__restaurant{
         background-color: $color-white;
         width: 89.3%;
@@ -101,6 +120,9 @@
         text-decoration: none;
         color: black;
         margin-top: 15px;
+        @include desktop{
+            width: 45%;
+        }
     }
 }
 
