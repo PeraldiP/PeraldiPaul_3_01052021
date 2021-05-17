@@ -1,6 +1,5 @@
 header{
-    display: flex;
-    justify-content: center;
+    @include flexbox-center;
     padding: 20px 0 15px 0;
     a{
         position: absolute;
