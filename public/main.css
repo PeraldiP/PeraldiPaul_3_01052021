@@ -291,6 +291,11 @@ footer h1 {
   position: relative;
 }
 
+.working__instructions:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fface8), to(#ae80e5));
+  background: linear-gradient(#fface8, #ae80e5);
+}
+
 @media screen and (min-width: 950px) {
   .working__instructions {
     width: 28%;

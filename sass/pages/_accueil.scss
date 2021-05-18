@@ -74,6 +74,9 @@
         margin-top: 20px;
         @include flexbox-center;
         position: relative;
+        &:hover{
+            background: linear-gradient($color-secondary-lighten,$color-primary-lighten,);
+        }
         @include desktop{
             width: 28%;
         }
