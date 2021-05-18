@@ -40,6 +40,9 @@
             font-size: 1.3em;
             margin-top: 35px;
             margin-bottom: 60px;
+            &:hover{
+                background: linear-gradient($color-secondary-lighten,$color-primary-lighten)
+            }
         }
     } 
 }
