@@ -60,13 +60,19 @@
             width: 30%;
         }
         h2{
+            position: relative;
             font-size: 1.4em;
             text-transform: uppercase;
-        }
-        .border{
-            margin-top: 8px;
-            width: 40px;
-            border: 1px solid $color-tertiary;
+            padding-bottom: 8px;
+            &::after{
+                position: absolute;
+                content: "";
+                left: 0;
+                bottom: 0px;
+                width: 40px;
+                height: 2px;
+                background-color: $color-tertiary;
+            }
         }
     }
     &__btn{
@@ -139,6 +145,38 @@
         @include desktop{
             width: 50px;
             margin-left: 10px;
+        }
+    }
+}
+
+/* Mise en place de l'animation des menus des cartes restaurants */
+.entrees{
+    transform-origin: top;
+    animation: defilement 600ms both;
+    @for $i from 1 through 4 {
+        .choix#{$i}{
+            transform-origin: top;
+            animation: defilement 300ms $i*200-100ms both;
+        }
+    }
+}
+.plats{
+    transform-origin: top;
+    animation: defilement 600ms 500ms both;
+    @for $i from 1 through 4 {
+        .choix#{$i}{
+            transform-origin: top;
+            animation: defilement 300ms $i*200+400ms both;
+        }
+    }
+}
+.desserts{
+    transform-origin: top;
+    animation: defilement 600ms 1000ms both;
+    @for $i from 1 through 4 {
+        .choix#{$i}{
+            transform-origin: top;
+            animation: defilement 300ms $i*200+900ms both;
         }
     }
 }

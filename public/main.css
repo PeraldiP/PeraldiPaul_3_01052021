@@ -1,3 +1,35 @@
+@-webkit-keyframes defilement {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  70% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes defilement {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  70% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 * {
   margin: 0;
 }
@@ -582,14 +614,20 @@ footer h1 {
 }
 
 .menu__service h2 {
+  position: relative;
   font-size: 1.4em;
   text-transform: uppercase;
+  padding-bottom: 8px;
 }
 
-.menu__service .border {
-  margin-top: 8px;
+.menu__service h2::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0px;
   width: 40px;
-  border: 1px solid #99E2D0;
+  height: 2px;
+  background-color: #99E2D0;
 }
 
 .menu__btn {
@@ -721,5 +759,111 @@ footer h1 {
     width: 50px;
     margin-left: 10px;
   }
+}
+
+/* Mise en place de l'animation des menus des cartes restaurants */
+.entrees {
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-animation: defilement 600ms both;
+          animation: defilement 600ms both;
+}
+
+.entrees .choix1 {
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-animation: defilement 300ms 100ms both;
+          animation: defilement 300ms 100ms both;
+}
+
+.entrees .choix2 {
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-animation: defilement 300ms 300ms both;
+          animation: defilement 300ms 300ms both;
+}
+
+.entrees .choix3 {
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-animation: defilement 300ms 500ms both;
+          animation: defilement 300ms 500ms both;
+}
+
+.entrees .choix4 {
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-animation: defilement 300ms 700ms both;
+          animation: defilement 300ms 700ms both;
+}
+
+.plats {
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-animation: defilement 600ms 500ms both;
+          animation: defilement 600ms 500ms both;
+}
+
+.plats .choix1 {
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-animation: defilement 300ms 600ms both;
+          animation: defilement 300ms 600ms both;
+}
+
+.plats .choix2 {
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-animation: defilement 300ms 800ms both;
+          animation: defilement 300ms 800ms both;
+}
+
+.plats .choix3 {
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-animation: defilement 300ms 1000ms both;
+          animation: defilement 300ms 1000ms both;
+}
+
+.plats .choix4 {
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-animation: defilement 300ms 1200ms both;
+          animation: defilement 300ms 1200ms both;
+}
+
+.desserts {
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-animation: defilement 600ms 1000ms both;
+          animation: defilement 600ms 1000ms both;
+}
+
+.desserts .choix1 {
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-animation: defilement 300ms 1100ms both;
+          animation: defilement 300ms 1100ms both;
+}
+
+.desserts .choix2 {
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-animation: defilement 300ms 1300ms both;
+          animation: defilement 300ms 1300ms both;
+}
+
+.desserts .choix3 {
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-animation: defilement 300ms 1500ms both;
+          animation: defilement 300ms 1500ms both;
+}
+
+.desserts .choix4 {
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-animation: defilement 300ms 1700ms both;
+          animation: defilement 300ms 1700ms both;
 }
 /*# sourceMappingURL=main.css.map */
