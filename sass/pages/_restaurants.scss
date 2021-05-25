@@ -106,20 +106,37 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    &:hover{
+        @include desktop{
+            .choice__description{
+                width: 60%;
+            }
+        }   
+        .choice__price{
+            animation: translate-price 300ms both;
+        }
+        .choice__validate{
+            animation: checkbox-validate 300ms both;
+            opacity: 1;
+        }
+        .fa-check-circle{
+            animation: rotate-validate 500ms both;
+        }
+    }
     &__description{
         margin-left: 10px;
-        width: 270px;
+        max-width: 70%;
         h3{
             font-weight: bold;
-            font-size: 1.5em;
-            @include desktop{
-                font-size: 1.3em;
-            }
-        }
-        p{
             font-size: 1.3em;
             @include desktop{
                 font-size: 1.1em;
+            }
+        }
+        p{
+            font-size: 1.1em;
+            @include desktop{
+                font-size: 0.9em;
             }
         }
     }
@@ -127,21 +144,23 @@
         height: 57%;
         font-size: 1.3em;
         font-weight: bold;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
+        position: absolute;
+        top: 35px;
+        right: 15px;
         @include desktop{
             font-size: 1.1em;
         }
     }
     &__validate{
+        opacity: 0;
         height: 100%;
         width:60px;
         background-color: #99E2D0;
         border-radius: 0 20px 20px 0;
         @include flexbox-center;
-        font-size: 1.5em;
+        font-size: 2em;
         color: $color-white;
+        transform-origin: right;
         @include desktop{
             width: 50px;
             margin-left: 10px;

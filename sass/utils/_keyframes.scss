@@ -11,3 +11,32 @@
         transform: translateY(0);   
     }
 }
+
+
+@keyframes translate-price{
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translate(-60px);
+    }
+  }
+
+  
+  @keyframes checkbox-validate {
+    0% {
+      transform: scaleX(0);
+    }  
+    100% {
+        transform: scaleX(1);
+    }
+  }
+
+  @keyframes rotate-validate { 
+    0% {
+      transform: rotate(-90deg);
+    }  
+    100% {
+        transform: rotate(360deg);
+    }
+  }
