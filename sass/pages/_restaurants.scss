@@ -3,20 +3,20 @@
     height:300px;
     width: 100%;  
     &_a-la-francaise{
-        background: url(/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-        background-size: 100% 300px;      
+        background: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);  
+        background-size: cover;   
     }
     &_la-note-enchantee{
-        background: url(/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
-        background-size: 100% 300px;      
+        background: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);     
+        background-size: cover;
     }
     &_la-palette-du-gout{
-        background: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-        background-size: 100% 300px;      
+        background: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);  
+        background-size: cover;   
     }
     &_le-delice-des-sens{
-        background: url(/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
-        background-size: 100% 300px;      
+        background: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+        background-size: cover;
     }
 }
 
@@ -84,11 +84,13 @@
         width: 275px;
         @include flexbox-center;
         border-radius: 25px;
+        @include shadow;
         font-size: 1.5em;
         margin-top: 50px;
         margin-bottom: 80px;
         &:hover{
-            background: linear-gradient($color-secondary-lighten,$color-primary-lighten)
+            background: linear-gradient($color-secondary-lighten,$color-primary-lighten);
+            @include shadow(15px);
         }
         @include desktop{
             margin-top: 40px;
@@ -102,6 +104,7 @@
     height: 70px;
     width: 100%;
     border-radius: 20px;
+    @include shadow;
     margin-top: 15px;
     display: flex;
     justify-content: space-between;
