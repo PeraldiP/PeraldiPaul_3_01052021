@@ -203,7 +203,7 @@ body {
 
 .heart-color:hover {
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
-  background-clip: text;
+  background-clip: content-box;
   -webkit-background-clip: text;
   color: transparent;
   opacity: 1;
@@ -906,10 +906,12 @@ footer h1 {
           align-items: center;
 }
 
-@media screen and (min-width: 950px) {
-  .choice:hover .choice__description {
-    width: 60%;
-  }
+.choice:hover .choice__description h3 {
+  width: 80%;
+}
+
+.choice:hover .choice__description p {
+  width: 70%;
 }
 
 .choice:hover .choice__price {
@@ -930,12 +932,15 @@ footer h1 {
 
 .choice__description {
   margin-left: 10px;
-  max-width: 70%;
+  width: 100%;
 }
 
 .choice__description h3 {
   font-weight: bold;
   font-size: 1.3em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @media screen and (min-width: 950px) {
@@ -946,6 +951,9 @@ footer h1 {
 
 .choice__description p {
   font-size: 1.1em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @media screen and (min-width: 950px) {

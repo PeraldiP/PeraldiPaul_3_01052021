@@ -26,7 +26,7 @@
         transition:  all 1s;
         &:hover{
             background:-webkit-linear-gradient(#9356DC,#FF79DA);
-            background-clip:text;
+            background-clip: content-box;
             -webkit-background-clip:text;
             color:transparent;
             opacity: 1;
