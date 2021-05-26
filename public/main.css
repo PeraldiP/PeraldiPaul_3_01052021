@@ -906,10 +906,13 @@ footer h1 {
           align-items: center;
 }
 
+<<<<<<< HEAD
 .choice:hover .choice__description h3 {
   width: 80%;
 }
 
+=======
+>>>>>>> f1350a36bf9bc8df37c84207a9007d02ff5851aa
 .choice:hover .choice__description p {
   width: 70%;
 }
@@ -939,8 +942,11 @@ footer h1 {
   font-weight: bold;
   font-size: 1.3em;
   white-space: nowrap;
+<<<<<<< HEAD
   overflow: hidden;
   text-overflow: ellipsis;
+=======
+>>>>>>> f1350a36bf9bc8df37c84207a9007d02ff5851aa
 }
 
 @media screen and (min-width: 950px) {

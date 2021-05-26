@@ -111,9 +111,12 @@
     align-items: center;
     &:hover{ 
         .choice__description{
+<<<<<<< HEAD
             h3{
                 width: 80%;
             }
+=======
+>>>>>>> f1350a36bf9bc8df37c84207a9007d02ff5851aa
             p{
                 width: 70%;
             }
@@ -137,6 +140,7 @@
             font-size: 1.3em;
             white-space: nowrap;overflow: hidden;
             text-overflow: ellipsis;  
+            white-space: nowrap;
             @include desktop{
                 font-size: 1.1em;
             }
