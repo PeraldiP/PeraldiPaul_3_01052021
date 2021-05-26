@@ -137,6 +137,7 @@
             font-size: 1.3em;
             white-space: nowrap;overflow: hidden;
             text-overflow: ellipsis;  
+            white-space: nowrap;
             @include desktop{
                 font-size: 1.1em;
             }
