@@ -109,12 +109,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    &:hover{
-        @include desktop{
-            .choice__description{
-                width: 60%;
+    &:hover{ 
+        .choice__description{
+            p{
+                width: 70%;
             }
-        }   
+        }
         .choice__price{
             animation: translate-price 300ms both;
         }
@@ -128,16 +128,20 @@
     }
     &__description{
         margin-left: 10px;
-        max-width: 70%;
+        width: 100%;
         h3{
             font-weight: bold;
             font-size: 1.3em;
+            white-space: nowrap;
             @include desktop{
                 font-size: 1.1em;
             }
         }
         p{
-            font-size: 1.1em;
+            font-size: 1.1em; 
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;  
             @include desktop{
                 font-size: 0.9em;
             }
